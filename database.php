@@ -6,7 +6,7 @@ include_once 'db.php';
 
 // Get table info
 $tables = [];
-$result = mysqli_query($conn, "SHOW TABLE STATUS FROM fraud_detection");
+$result = mysqli_query($conn, "SHOW TABLE STATUS FROM fraud");
 while ($row = mysqli_fetch_assoc($result)) {
     $tables[] = $row;
 }
@@ -33,7 +33,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
             <div class="dash-card full-width">
                 <div class="dash-card-header">
-                    <h3><i class="ri-table-line"></i> Tables in fraud_detection</h3>
+                    <h3><i class="ri-table-line"></i> Tables in fraud</h3>
                 </div>
                 <div class="dash-card-body">
                     <div class="table-responsive">

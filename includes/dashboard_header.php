@@ -45,7 +45,7 @@ $totalNotifs = $unreadMessages + $alertCount;
         </div>
     </div>
     <div class="header-right">
-        <div class="header-notifications" onclick="toggleNotifDropdown()">
+        <div class="header-notifications" onclick="toggleNotifDropdown(event)">
             <i class="ri-notification-3-line"></i>
             <?php if ($totalNotifs > 0): ?>
                 <span class="notif-badge"><?= $totalNotifs ?></span>
@@ -82,7 +82,7 @@ $totalNotifs = $unreadMessages + $alertCount;
                 </div>
             </div>
         </div>
-        <div class="header-user" onclick="toggleUserDropdown()">
+        <div class="header-user" onclick="toggleUserDropdown(event)">
             <div class="user-avatar">
                 <?= strtoupper(substr($userName, 0, 1)) ?>
             </div>

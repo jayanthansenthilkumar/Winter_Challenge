@@ -224,7 +224,7 @@ while ($row = mysqli_fetch_assoc($userDist)) { $roleData[$row['role']] = $row['c
                             </div>
                             <div class="info-item">
                                 <span>Database</span>
-                                <strong>fraud_detection</strong>
+                                <strong>fraud</strong>
                             </div>
                             <div class="info-item">
                                 <span>Tables</span>

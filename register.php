@@ -18,6 +18,9 @@ $error = $_GET['error'] ?? '';
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="auth-body">
+    <a href="index.php" class="btn-back-home">
+        <i class="ri-arrow-left-line"></i> Back to Home
+    </a>
     <div class="auth-container">
         <div class="auth-grid-split">
             <div class="auth-brand-side">

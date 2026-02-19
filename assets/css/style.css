@@ -30,7 +30,14 @@
     --sidebar-width: 260px;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; scrollbar-width: thin; scrollbar-color: rgba(217,119,6,0.3) transparent; }
+
+*::-webkit-scrollbar { width: 6px; height: 6px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: rgba(217,119,6,0.3); border-radius: 3px; }
+*::-webkit-scrollbar-thumb:hover { background: rgba(217,119,6,0.5); }
+
+html { overflow-x: hidden; }
 
 body {
     font-family: 'Inter', sans-serif;
